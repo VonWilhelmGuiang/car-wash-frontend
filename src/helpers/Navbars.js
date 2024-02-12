@@ -40,7 +40,7 @@ export const createRoutes = (routes) => routes ? routes?.map((prop, key) => <Rou
             : array of objects
             : objects should have the following keys
                 path: "/index",
-                name: "Dashboard",
+                name: "",
                 icon: "ni ni-tv-2 text-primary",
                 component: <Index />,
                 layout: "/admin",    
