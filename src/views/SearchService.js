@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Maps from './Maps';
 import { Container } from 'reactstrap';
-import Header from 'components/Headers/Header';
-
+import Maps from './examples/Maps';
 
 const CarwashFinder = () => {
   const [userLocation, setUserLocation] = useState(null);
