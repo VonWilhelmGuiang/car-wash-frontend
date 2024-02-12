@@ -22,6 +22,13 @@ import Register from "views/Register.js";
 import Login from "views/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
+import Notifications from "views/Notifications.js";
+import Searchstation from "views/examples/Searchstation.js";
+import Searchservices from "views/examples/Searchservices.js";
+import Booking from "views/Booking.js";
+import BookingForm from "views/BookingForm.js";
+
+
 
 var routes = [
   {
@@ -74,14 +81,57 @@ var routes = [
     layout: "/auth",
   },
   {
-    path: "/tables",
-    name: "Tables",
+    path: "/index",
+    name: "Dashboard",
+    icon: "ni ni-tv-2 text-primary",
+    component: <Index />,
+    layout: "/vehicleowner",
+  },
+  {
+    path: "/bookings",
+    name: "Bookings",
     icon: "ni ni-bullet-list-67 text-red",
-    component: <Tables />,
+    component: <Booking />,
+    layout: "/vehicleowner"
+  },
+
+  {
+    path: "/BookingForm",
+    name: "BookingForm",
+    icon: "ni ni-bullet-list-67 text-red",
+    component: <BookingForm />,
+    layout: "/vehicleowner"
+  },
+  {
+    path: "/notifications",
+    name: "Notifications",
+    icon: "ni ni-bullet-list-67 text-red",
+    component: <Notifications />,
+    layout: "/vehicleowner"
+  },
+  {
+    path: "/searchstation",
+    name: "Search Station",
+    icon: "ni ni-bullet-list-67 text-red",
+    component: <Searchstation />,
+    layout: "/vehicleowner"
+  },
+  {
+    path: "/searchservices",
+    name: "Search Service",
+    icon: "ni ni-bullet-list-67 text-red",
+    component: <Searchservices />,
     layout: "/vehicleowner"
   },
   {
     path: "/tables",
+    name: "Tables",
+    icon: "ni ni-bullet-list-67 text-red",
+    component: <Tables />,
+    layout: "/shopowner"
+  },
+  {
+    path: "/admin/login",
     name: "Tables",
     icon: "ni ni-bullet-list-67 text-red",
     component: <Tables />,

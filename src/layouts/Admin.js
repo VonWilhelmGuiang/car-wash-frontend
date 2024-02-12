@@ -34,6 +34,7 @@ const Admin = (props) => {
     const create_routes = createRoutes(current_routes)
     return (
         <>
+        Route::post('resgister', AuthController::class.'register')Route::post('resgister', AuthController::class.'register')
             <Sidebar
                 {...props}
                 routes={current_routes}

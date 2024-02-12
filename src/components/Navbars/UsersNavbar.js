@@ -46,7 +46,6 @@ const UsersNavbar = (props) => {
                     className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
                     to="/"
                 >
-                    {current_page_name}
                 </Link>
                 <Nav className="align-items-center d-none d-md-flex" navbar>
                     <UncontrolledDropdown nav>
